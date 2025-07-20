@@ -1,0 +1,26 @@
+#dharshini g's python project.
+#python project : games 
+
+import random
+
+#.........GAME 1 : NUMBER GUESSER!!!.......
+
+def number_guesser_game():
+    print("\nWELCOME TO THE NUMBER GUESSING GAME !!!")
+    computer = random.randint(1,10)
+    
+    
+    for i in range(3):
+       user_guess = int(input("guess a number between 1 to 10 : "))
+       if user_guess == computer:
+           print(f"you guessed it right !!!\nThe number is {computer}.")
+           return()
+       elif user_guess < computer:
+            print("Too low!")
+       else:
+            print("Too high!")
+    print(f"you lost !!! The number is  {computer}.")
+    
+    
+number_guesser_game()
+        
